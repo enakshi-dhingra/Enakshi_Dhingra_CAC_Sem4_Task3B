@@ -7,73 +7,81 @@
 
 <body>
     <div id="bg">
-        
+
         <div id="container">
             <div id="header">
                 <h1> Welcome to the Kodava Archive</h1>
             </div>
-    </script>
+            </script>
             <div class="content">
-                <img src="assets/images/kodava_logo.png" width= "200" height = "200"  > </img>      
-                <h3> <p>Get ready for a 360 degree experience of the Kodava House and Architecture</p> </h3>
-             <p><center> <font size="4">Built by craftsmen from Kerala and used wood extensively. <br>
-                Ainmanes have been in existence since the 8th century CE. <br>
-                Architecturally, they evolved from simple mud houses to <br>
-                the more complex designs that exist from the late 18th century.</font> </center></p>  </h5>
+                <img src="assets/images/kodava_logo.png" width="200" height="200"> </img>
+                <h3>
+                    <p>Get ready for a 360 degree experience of the Kodava House and Architecture</p>
+                </h3>
+                <p>
+                    <center>
+                        <font size="4">Built by craftsmen from Kerala and used wood extensively. <br>
+                            Ainmanes have been in existence since the 8th century CE. <br>
+                            Architecturally, they evolved from simple mud houses to <br>
+                            the more complex designs that exist from the late 18th century.</font>
+                    </center>
+                </p>
+                </h5>
             </div>
 
-            
-           <!-- hyperlinking the VR Museum experience-->
-            <div class="button-container">
-                <a href="image_gallery.html" >
-                <button class="enter-button">Enter the VR Museum</button>
-            </a>
-            </div>
+            <div class="action-container">
 
-            <!-- hyperlinking the website made for prototype 1-->
-            <div class="button-container">
-                <a href="https://enakshidhingra.wixsite.com/website" >
-                <button class="button2">Visit the Website</button>
-            </a>
+                <!-- hyperlinking the VR Museum experience-->
+                <div class="button-container">
+                    <a href="image_gallery.html">
+                        <button class="enter-button">Enter the VR Museum</button>
+                    </a>
+                </div>
+                <div class="right-col">
+                    <img src="assets/images/play.png" id="icon">
+                </div>
+
+                <!-- hyperlinking the website made for prototype 1-->
+                <div class="button-container">
+                    <a href="https://enakshidhingra.wixsite.com/website">
+                        <button class="button2">Visit the Website</button>
+                    </a>
+                </div>
             </div>
-            <div class="right-col">
-                 
-                            <img src="assets/images/play.png" id="icon">
-                        </div>
-                    </div>
-                
-                    <!-- adding traditional music-->
-                    <audio id="mysound">
-                        <source src="assets/music.mp3" type="audio/mp3">
-                    </audio>
-                 
-                    <script>
-                        var mysound = document.getElementById("mysound");
-                        var icon = document.getElementById("icon");
-                 
-                        // Creating a function that will change
-                        // pause to play and vice-versa
-                        icon.onclick = function() {
-                            if (mysound.paused) {
-                 
-                                // If paused then play the
-                                // music and change the image
-                                mysound.play();
-                                icon.src =
-                "assets/images/pause.png";
-                            } else {
-                 
-                                // If playing then pause the
-                                // music and change the image
-                                mysound.pause();
-                                icon.src =
-                "assets/images/play.png";
-                            }
-                        }
-                    </script>
-                
         </div>
-        
+
+        <!-- adding traditional music-->
+        <audio id="mysound">
+            <source src="assets/music.mp3" type="audio/mp3">
+        </audio>
+
+        <script>
+            var mysound = document.getElementById("mysound");
+            var icon = document.getElementById("icon");
+
+            // Creating a function that will change
+            // pause to play and vice-versa
+            icon.onclick = function () {
+                if (mysound.paused) {
+
+                    // If paused then play the
+                    // music and change the image
+                    mysound.play();
+                    icon.src =
+                        "assets/images/pause.png";
+                } else {
+
+                    // If playing then pause the
+                    // music and change the image
+                    mysound.pause();
+                    icon.src =
+                        "assets/images/play.png";
+                }
+            }
+        </script>
+
+    </div>
+
     </div>
 </body>
 
